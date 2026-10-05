@@ -171,9 +171,6 @@ h2 { font-size: clamp(28px, 3.4vw, 44px); font-stretch: 88%; font-weight: 800; l
   .app:hover { padding-left: 16px; }
   .about { grid-template-columns: 1fr; gap: 20px; }
 }
-@media (max-width: 520px) {
-  .status .mono:first-of-type { display: none; }
-}
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
