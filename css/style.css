@@ -139,6 +139,12 @@ h2 { font-size: clamp(28px, 3.4vw, 44px); font-stretch: 88%; font-weight: 800; l
 }
 .app:hover .app__go { background: var(--red); border-color: var(--red); transform: translate(3px, -3px); }
 
+.app--soon { cursor: default; opacity: .55; }
+.app--soon:hover { background: transparent; padding-left: 20px; }
+.app--soon:hover::before { transform: scaleY(0); }
+.app--soon:hover .app__go { background: transparent; border-color: var(--line); transform: none; }
+.app--soon .app__url { color: var(--red); }
+
 /* ---------- About ---------- */
 .about {
   display: grid; grid-template-columns: 1fr 1.4fr; gap: 40px;
